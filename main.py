@@ -62,7 +62,7 @@ def count_down(count):
         if PAUSE:
             TIMER = window.after(0, count_down, count)
         else:
-            TIMER = window.after(1, count_down, count - 1)
+            TIMER = window.after(1000, count_down, count - 1)
     else:
         start_timer()
         playsound("short-success-sound-glockenspiel-treasure-video-game-6346.mp3")
